@@ -8,7 +8,7 @@ import modelcluster.fields
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('wagtailimages', '0022_uploadedimage'),
+        #('wagtailimages', '0022_uploadedimage'),
         ('home', '0005_auto_20200621_2127'),
     ]
 

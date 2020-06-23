@@ -52,12 +52,6 @@ class HomePage(Page):
 
     subtitle = models.CharField(max_length=100, null=True, blank=True)
 
-    content_panels = Page.content_panels + [
-        FieldPanel("subtitle"),
-        StreamFieldPanel("content"),
-    ]
-
-    
     
     
     banner_title = models.CharField(max_length=100, blank=False, null=True)
@@ -80,6 +74,8 @@ class HomePage(Page):
     content_panels = Page.content_panels + [
         MultiFieldPanel(
             [
+                FieldPanel("subtitle"),
+                StreamFieldPanel("content"),
                 FieldPanel("banner_title"),
                 FieldPanel("banner_subtitle"),
                 ImageChooserPanel("banner_image"),

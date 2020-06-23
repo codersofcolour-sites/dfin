@@ -16,19 +16,49 @@
     </div>
   </div>
 
- <h1> Welcome to DIFN</h1>
+ <h1> What we do</h1>
  <p class="lead">
-    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+    DIFN provides creative and sustainable ways of reducing youth poverty and unemployment.
+We assist orphan and vulnerable children in accessing universal basic education and health care.
   </p>
+<br>
 
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src={% image page.image fill-320x320 %} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
   
+
+  <br>
   {# Example of an Orderable from home/models.py #}
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
          {% for loop_cycle in self.carousel_images.all %}
-              {% image loop_cycle.carousel_image fill-400x200 as img %}
+              {% image loop_cycle.carousel_image fill-600x400 as img %}
               <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %}">
-                  <img src="{{ img.url }}" class="d-block w-100" alt="{{ img.alt }}">
+                  <img src="{{ img.url }}" class="width:100%; height:150%; center;" alt="{{ img.alt }}">
               </div>
           {% endfor %}
       </div>

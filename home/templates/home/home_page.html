@@ -16,19 +16,10 @@
     </div>
   </div>
 
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date }}</p>
-  {% image page.image fill-320x320 %}
-  <div class="intro">{{ page.intro }}</div>
-  {% for child in self.body %}
-  {% if child.block_type == 'heading' %}
-      <h2>{{ child }}</h2>
-  {% else %}
-      {{ child }}
-  {% endif %}
-  {% endfor %}
-  <p><a href="{% pageurl page.get_parent %}">Return to blog</a></p>
-
+ <h1> Welcome to DIFN</h1>
+ <p class="lead">
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+  </p>
 
   
   {# Example of an Orderable from home/models.py #}

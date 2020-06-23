@@ -10,7 +10,7 @@ from wagtail.admin.edit_handlers import (
     PageChooserPanel,
 )
 from wagtail.core.models import Page, Orderable
-from wagtail.core.fields import RichTextField, StreamField
+from wagtail.core.fields import RichTextField
 from wagtail.images.edit_handlers import ImageChooserPanel
 
 from streams import blocks
@@ -61,6 +61,7 @@ class HomePage(Page):
                 FieldPanel("banner_subtitle"),
                 ImageChooserPanel("banner_image"),
                 PageChooserPanel("banner_cta"),
+    
             ],
             heading="Banner Options",
         ),

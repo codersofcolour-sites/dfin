@@ -37,15 +37,6 @@ class HomePage(Page):
     template = "home/home_page.html"
     max_count = 1
     
-    image = models.ForeignKey(
-    'wagtailimages.Image',
-    null=True,
-    blank=True,
-    on_delete=models.SET_NULL
-    )
-
-
-
     banner_title = models.CharField(max_length=100, blank=False, null=True)
     banner_subtitle = RichTextField(features=["bold", "italic"])
     banner_image = models.ForeignKey(
@@ -70,7 +61,7 @@ class HomePage(Page):
                 FieldPanel("banner_subtitle"),
                 ImageChooserPanel("banner_image"),
                 PageChooserPanel("banner_cta"),
-                ImageChooserPanel('image'), 
+                
 
             ],
             heading="Banner Options",

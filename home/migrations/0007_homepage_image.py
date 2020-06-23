@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('wagtailimages', '0022_uploadedimage'),
+        #('wagtailimages', '0022_uploadedimage'),
         ('home', '0006_homepagecarouselimages'),
     ]
 

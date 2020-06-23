@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load wagtailcore_tags %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
@@ -15,6 +15,14 @@
       {% endif %}
     </div>
   </div>
+
+    <div>
+        {{ self.subtitle }} 
+    </div>
+    {% for block in page.content %}
+        {% include_block block %}
+    {% endfor %}
+
 
  <h1> What we do</h1>
  <p class="lead">
@@ -72,7 +80,4 @@ We assist orphan and vulnerable children in accessing universal basic education 
       </a>
   </div>
 
-  {% for block in page.content %}
-      {% include_block block %}
-  {% endfor %}
-{% endblock %}
+  {% endblock %}

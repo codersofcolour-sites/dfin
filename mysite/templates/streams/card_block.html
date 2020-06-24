@@ -1,7 +1,7 @@
 <h1>{{ self.title }}</h1>
 
 <div class="card-deck">
-    {% for card in self.cards %}
+    
     <div class="card">
       <img class="card-img-top" src="{{ img.url }}" alt="{{ img.alt }}">
       <div class="card-body">
@@ -9,22 +9,5 @@
         <p class="card-text">{{ card.text }}</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="{{ img.url }}" alt="{{ img.alt }}">
-      <div class="card-body">
-        <h5 class="card-title">{{ card.title }}</h5>
-        <p class="card-text">{{ card.text }}</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="{{ img.url }}" alt="{{ img.alt }}">
-      <div class="card-body">
-        <h5 class="card-title">{{ card.title }}</h5>
-        <p class="card-text">{{ card.text }}</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-      {% endfor %}
     </div>
   </div>

@@ -2,6 +2,8 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
+import django_extensions.db.fields
+import modelcluster.fields
 import wagtail.core.fields
 
 
@@ -26,3 +28,4 @@ class Migration(migrations.Migration):
             bases=('wagtailcore.page',),
         ),
     ]
+    

@@ -1,28 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container"></div>
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <div class="collapse navbar-collapse" id="navbarColor01">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        
         {% for item in menu_items %}
-        <div class="{{ item.active_class }}">
-          <a href="{{ item.href }}" style="color:black;">{{ item.text }}</a>
-        
-        {% if item.sub_menu %}
-        <ul class="sub-menu">
-            {% for sub_item in item.sub_menu.items %}
-                <div class="{{ sub_item.active_class }}"><a href="{{ sub_item.href }}">{{ sub_item.text }}</a></li>
-            {% endfor %}
-         </div> 
-         
-    
-    </ul>
-    {% endif %}
-</div>
-    {% endfor %}
-</ul>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ item.href }}">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </nav>

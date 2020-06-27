@@ -1,7 +1,39 @@
 body{
     background-color: white;
 }
-btn btn-primary{
-    background-color: rgba(216, 41, 41, 0.842);
-	color: white;
+
+.navbar{
+    background-color:rgb(199, 90, 90): important;
+}
+
+.fa{
+padding:20px;
+font-size: 30px;
+width:50px;
+text-align: center: important;
+text-decoration: none;
+margin:5p 20px;
+border-radius: 30%;
+}
+
+.fa.hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background:#3B5998; ;
+    color: white;
+}
+.fa-twitter{
+    background:#55ACEE;
+    color: white;
+}
+.fa-youtube{
+    background:#bb0000;
+    color: white;
+}
+
+.btn btn-primary{
+    background:#bb0000;
+    color: white;
 }

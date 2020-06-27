@@ -17,7 +17,7 @@
   </div>
 
     <div>
-        {{ self.subtitle }} 
+      
     </div>
     {% for block in page.content %}
         {% include_block block %}
@@ -28,7 +28,7 @@
 <br>
 
 
-  
+{{ self.subtitle|richtext }}
 
   <br>
   {# Example of an Orderable from home/models.py #}

@@ -2,12 +2,7 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
-<header>
 
-</header>
-
-
- 
     <style>
         .contact-form {
             list-style-type: none;
@@ -26,21 +21,22 @@
         }
     </style>
 
-   <div class="container mt-5 mb-5">
-       
-    <h1>{{ page.title }}</h1>
-    <p>
-    {{ self.intro|richtext }}
-    </p>
+    <div class="container mt-5 mb-5">
+        <h1>{{ page.title }}</h1>
+        <p>
+            {{ self.intro|richtext }}
+        </p>
 
-    <form action="{% pageurl page %}" method="POST">
-        {% csrf_token %}
-        <ul>
-            {{ form.as_ul }}
-        </ul>
+        <form action="{% pageurl page %}" method="POST">
+            {% csrf_token %}
+            <ul class="contact-form">
+                {{ form.as_ul }}
+            </ul>
 
-        <button type="submit">
-            Submit Form
-        </button>
-    </form>
-{% endblock %}
+            <button type="submit">
+                Submit Form
+            </button>
+        </form>
+    </div> 
+    
+    {% endblock %}

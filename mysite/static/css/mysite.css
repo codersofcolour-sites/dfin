@@ -2,6 +2,17 @@ body{
     background-color: white;
 }
 
+footer {
+    text-align: center;
+    background-color: rgb(228, 85, 85);
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+  }
+  
 
 .fa{
 padding:20px;
@@ -10,7 +21,6 @@ width:50px;
 text-align: center;
 text-decoration: none;
 margin:5p 20px;
-border-radius: 30%;
 }
 
 .fa.hover{

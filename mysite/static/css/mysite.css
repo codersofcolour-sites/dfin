@@ -4,10 +4,10 @@ body{
 
 footer {
     text-align: center;
-    background-color: rgb(228, 85, 85);
+    background-color: rgb(170, 41, 41);
     color: #fff;
-    padding: 20px;
-    position: absolute;
+    padding: 0.5x;
+    
     bottom: 0;
     width: 100%;
    
@@ -15,7 +15,7 @@ footer {
   
 
 .fa{
-padding:20px;
+padding:3px;
 font-size: 30px;
 width:50px;
 text-align: center;

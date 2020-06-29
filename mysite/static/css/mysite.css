@@ -3,13 +3,14 @@ body{
 }
 
 .btn{
-box-sizing: border-box;
+    box-sizing: border-box;
 padding: 9px 25px;
 background-color:rgb(170, 4, 41);
 color: #fff;
 
 
 }
+
 footer {
     text-align: center;
     background-color: rgb(170, 41, 41);

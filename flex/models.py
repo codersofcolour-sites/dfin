@@ -47,6 +47,7 @@ class FlexPage(Page):
         FieldPanel("subtitle"),
         StreamFieldPanel("content"),
         FieldPanel("banner_title"),
+        FieldPanel("banner_subtitle"),
         ImageChooserPanel("banner_image"),
         PageChooserPanel("banner_cta")
 
